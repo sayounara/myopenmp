@@ -67,7 +67,7 @@ merge()
 
 	for (i = 0; i < NTHR; i++)
 		idx[i] = i * TNUM;
-//	#pragma omp parallel for
+	#pragma omp parallel for
 	for (sidx = 0; sidx < NUMNUM; sidx++) {
 		num = LONG_MAX;
 		for (i = 0; i < NTHR; i++) {
